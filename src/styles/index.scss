@@ -1,0 +1,34 @@
+@import './normalize.css';
+
+// Fonts
+@import './fonts.scss';
+
+// Variables
+@import './variables.scss';
+
+//components
+@import './components/header.scss';
+@import './components/buttons.scss';
+
+
+body {
+  font-family: 'Open Sans','Martel', 'Montserrat','Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-color;
+}
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  min-width: 416px;
+
+  &-body {
+    flex: 0 1 1440px;
+  }
+}
+
+
+
+

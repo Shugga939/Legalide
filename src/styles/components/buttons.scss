@@ -1,0 +1,23 @@
+.btn-r {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+  letter-spacing: 0.2px;
+  padding: 10px 36px;
+  border-radius: 25px;
+  
+  &--primary {
+    border: none;
+    color: #ffffff;
+    background-color: $secondary-color-2;
+
+  }
+  &--bordered {
+    background-color: transparent;
+    border: 1px solid $secondary-color-2;
+    color: $secondary-color-2;
+  }
+}
