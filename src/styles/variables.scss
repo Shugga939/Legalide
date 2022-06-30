@@ -29,6 +29,8 @@ h2 {
   /* or 125% */
   letter-spacing: 0.2px;
   color: $text-color;
+  margin: 0;
+
 }
 
 h3 {
@@ -40,6 +42,8 @@ h3 {
   /* or 133% */
   letter-spacing: 0.1px;
   color: $text-color;
+  margin: 0;
+
 }
 
 h4 {
@@ -63,6 +67,7 @@ h5 {
   /* or 150% */
   letter-spacing: 0.1px;
   color: $text-color;
+  margin: 0;
 }
 
 .btn-text {
@@ -118,6 +123,5 @@ p {
   /* or 171% */
   letter-spacing: 0.2px;
   color: $second-text-color;
-  
 }
 
