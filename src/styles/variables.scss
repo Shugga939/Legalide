@@ -1,12 +1,13 @@
 $primary-color: #D0A144;
+$second-text-color: #737373;
 $secondary-color-1: #FDB602;
 $secondary-color-2: #784F33;
 $secondary-color-3: #DBB468;
 $secondary-color-4: #295C7A;
 $text-color: #252B42;
-$second-text-color: #737373;
 $background-gradient: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
 $link-color : #FAFAFA;
+$background-section-color: #FAFAFA;
 
 h1 {
   font-family: 'Martel';
@@ -70,6 +71,17 @@ h5 {
   margin: 0;
 }
 
+h6 {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: $second-text-color;
+  margin: 0;
+}
+
 .btn-text {
   font-family: 'Open Sans';
   font-style: normal;
@@ -101,6 +113,7 @@ p {
   /* or 143% */
   letter-spacing: 0.2px;
   color: $text-color;
+  margin: 0;
 }
 
 .list {
