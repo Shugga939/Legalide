@@ -1,5 +1,3 @@
-// @import './Variables.scss' ;
-
 .header {
 }
 
@@ -11,8 +9,8 @@
   justify-content: center;
   flex-wrap: wrap;
   background: url(/src/assets/images/header/header-background.png);
-  // background: url(./../../assets/images/header/header-background.png);
   background-position: center;
+  background-size: cover;
 
   &__navigation-wrapper {
     flex: 1 1 1322px;
@@ -26,21 +24,27 @@
 }
 
 .header-mobile {
-  height: 532px;
-
+  display: flex;
+  flex-direction: column;
+  max-height: 532px;
+  
   &__buttons {
 
   }
 
-  &__nav {
+  &__nav {  
     
+    @media(max-width:710px) {
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+
     a {
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 30px;
       line-height: 45px;
-      /* identical to box height, or 150% */
       letter-spacing: 0.2px;
       color: $second-text-color;
     }
@@ -67,7 +71,6 @@
     }
     @media(max-width:710px) {
       margin-left: 35px;
-
     }
 
   }
@@ -87,7 +90,6 @@
       width: 130px;
       justify-content: space-between;
       margin-right: 40px;
-
     }
   }
 
@@ -124,7 +126,6 @@
     }
     .search-button {
       background: url(/src/assets/images/header/search-button.svg);
-      // background: url(./../../assets/images/header/search-button.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -132,7 +133,6 @@
     }
     .basket-button {
       background: url(/src/assets/images/header/basket-button.svg);
-      // background: url(./../../assets/images/header/basket-button.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -143,7 +143,6 @@
 
     button {
       background: url(/src/assets/images/header/Menu-button.svg);
-      // background: url(./../../assets/images/header/Menu-button.svg);
       background-repeat: no-repeat;
       background-position: center;
       width: 25px;
@@ -162,23 +161,21 @@
     width: 280px;
     display: flex;
     justify-content: space-between;
+
+    @media(max-width:710px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__link {
+
+      @media(max-width:710px) {
+        margin-top: 30px;
+      }
     }
   }
 }
-
-// .navigation__menu {
-
-//   button {
-//     // background: url(/src/assets/images/header/Menu-button.svg);
-//     background: url(./../../assets/images/header/Menu-button.svg);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     width: 25px;
-//     height: 25px;
-//     border: none;
-//   }
-// }
 
 //========== content block=============
 
@@ -189,10 +186,10 @@
 
   @media (max-width:992px) {
     flex-direction: column;
+  }
 
-    img {
-      object-fit: contain;
-    }
+  @media (max-width:710px) {
+    height: min-content;
   }
 
   &__text-container{
@@ -206,6 +203,12 @@
     @media (max-width:992px) {
       align-items: center;
     }
+
+    @media (max-width:710px) {
+      margin-top: 75px;
+      padding: 0 5px ;
+
+    }
   }
 
   &__title {
@@ -216,6 +219,8 @@
       
       h1 {
         font-size: 40px;
+        line-height: 55px;
+        letter-spacing: -0.2px;
       }
     }
   }
@@ -229,19 +234,39 @@
       width: 100%; 
       margin-top: 0px;
     }
+
+    @media(max-width:710px) {
+      margin-top: 25px;
+    }
   }
 
   &__buttons {
+    display: flex;
     margin-top: 33px;
 
     @media(max-width:992px) {
       margin-top: 10px;
+    }
 
+    @media(max-width:710px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
     }
 
     button {
       &:first-child {
-      margin-right: 8px;
+        margin-right: 8px;
+
+        @media(max-width:710px) {
+          margin: 0 0 20px 0;
+        }
+      }
+      &:last-child {
+          @media(max-width:710px) {
+            padding: 10px 26px;
+            width: 150px;
+        }
       }
     }
   }
@@ -252,8 +277,14 @@
     height: 100%;
 
     @media (max-width:992px) {
+      flex: 1 1 95%;
+    }
+
+    @media (max-width:710px) {
+      position: static;
       width: 100%;
-      height: 65%;
+      min-height: 460px;
+      margin-top: 100px;
     }
 
     img{
@@ -264,6 +295,14 @@
       left: -5px;
 
       @media (max-width:992px) {
+        object-fit: contain;
+      }
+
+      @media (max-width:710px) {
+        height: 440px;
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
         object-fit: contain;
       }
     }
