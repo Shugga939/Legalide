@@ -21,6 +21,13 @@
     justify-content: center;
     width: 100%;
   }
+
+  &__information {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: $background-section-color;
+  }
 }
 
 .section-name {
@@ -266,5 +273,42 @@
 
   &__title {
     margin-bottom: 4px;
+  }
+}
+
+//   == SECTION : INFORMATION ==
+
+.information {
+  min-height: 339px;
+  max-width: 1050px;
+  flex: 1 1 1050px;
+  
+  &__sponsors {
+    min-height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    // margin-top: ;
+  }
+
+  &__sponsor {
+    padding: 0 25px;
+  }
+
+  &__subscribe {
+
+  }
+
+  &__title {
+
+  }
+
+  &__input-container {
+
+  }
+
+  &__input {
+
   }
 }
