@@ -58,8 +58,8 @@ const plugins = () => {
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname, 'src/favicon.ico'),
-                to: path.resolve(__dirname, 'dist')
+                from: path.resolve(__dirname, 'src/assets'),
+                to: path.resolve(__dirname, 'dist/src/assets')
             }
         ]),
         new MiniCssExtractPlugin({
