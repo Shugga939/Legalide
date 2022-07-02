@@ -6,10 +6,9 @@
 
   &__links {
     width: 100%;
-    background-color: darkorange;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    background: $background-gradient;
   }
 
   &__social {
@@ -19,26 +18,48 @@
 
 
 .links {
-  flex: 0 1 1040px;
+  flex: 0 1 1050px;
   display: flex;
   justify-content: space-between;
+  margin: 50px 0;
+  color: #FFFFFF;
 
   &__column {
 
+    &:last-child {
+      width: 321px;
+    }
   }
 
   &__title {
-
-  }
+    color: inherit;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  } 
 
   &__list {
 
   }
 
   &__link {
-    
+    margin-bottom: 10px;
+    color: inherit;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &--thisImg {
+      display: flex;
+      
+      h6 {
+        margin-left: 10px;
+        color: inherit;
+      }
+    }
   }
 }
+  
 
 .social {
   flex: 0 1 1040px;

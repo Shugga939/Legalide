@@ -16,7 +16,7 @@ function adaptive_header (w,h) {
   let mobileButtons = document.querySelector('.header-mobile__buttons')
   let mobileNav = document.querySelector('.header-mobile__nav')
   
-  if (w<710) {
+  if (w<711) {
     mobileButtons.appendChild(navigation)
     mobileNav.appendChild(navPanel)
     

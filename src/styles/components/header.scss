@@ -205,20 +205,21 @@
     @media (max-width:710px) {
       margin-top: 75px;
       padding: 0 5px ;
-
     }
   }
 
   &__title {
-    margin-top: 2px;
 
     @media (max-width:992px) {
       text-align: center;
+      margin-left: -5px;
+      margin-top: 10px;
       
       h1 {
+        font-weight: 700;
         font-size: 40px;
-        line-height: 55px;
-        letter-spacing: -0.2px;
+        line-height: 50px;
+        letter-spacing: 0.2px;
       }
     }
   }
@@ -234,7 +235,7 @@
     }
 
     @media(max-width:710px) {
-      margin-top: 25px;
+      margin-top: 35px;
     }
   }
 
@@ -249,7 +250,7 @@
     @media(max-width:710px) {
       flex-direction: column;
       align-items: center;
-      margin-top: 40px;
+      margin-top: 35px;
     }
 
     button {
@@ -281,7 +282,7 @@
     @media (max-width:710px) {
       position: static;
       width: 100%;
-      min-height: 460px;
+      min-height: 470px;
       margin-top: 100px;
     }
 
