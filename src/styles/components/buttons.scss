@@ -8,6 +8,11 @@
   letter-spacing: 0.2px;
   padding: 10px 36px;
   border-radius: 25px;
+  text-transform: capitalize;
+
+  &:hover {
+    cursor: pointer;
+  }
   
   &--primary {
     border: none;
@@ -21,3 +26,34 @@
     color: $secondary-color-2;
   }
 }
+
+.btn-s {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+  letter-spacing: 0.2px;
+  padding: 13px 23px;
+  text-transform: capitalize;
+  height: min-content;
+
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    border: none;
+    color: #ffffff;
+    background-color: $secondary-color-3;
+
+  }
+  &--bordered {
+    background-color: transparent;
+    border: 1px solid $secondary-color-3;
+    color: $secondary-color-3;
+  }
+}
+

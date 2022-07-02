@@ -26,7 +26,22 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background: $background-section-color;
+    background:  url(/src/assets/images/main/information/blue_bg.png), $background-section-color;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $background-section-color;
+  }
+
+  &__consultation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -166,8 +181,7 @@
   }
 }
 
-//   == SECTION : ADVICE ==
-
+//   == SECTION : WHO ==
 .who {
   display: flex;
   flex-direction: column;
@@ -228,6 +242,7 @@
   &__advantage-container {
     flex: 0 1 330px;
     margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -277,38 +292,163 @@
 }
 
 //   == SECTION : INFORMATION ==
-
 .information {
+  position: relative;
   min-height: 339px;
   max-width: 1050px;
   flex: 1 1 1050px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__sponsors {
+    flex: 1 1 100%;
     min-height: 175px;
+    width: 100%;
+    max-height: min-content;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    // margin-top: ;
+    justify-content: space-around;
   }
 
   &__sponsor {
-    padding: 0 25px;
+    padding: 0 5px;
+
+    &:first-child {
+      padding-left: 0px;
+    }
+
+    &:last-child {
+      padding-right: 0px;
+    }
   }
 
   &__subscribe {
-
+    flex: 1 1 124px;
+    margin: 20.5px;
+    flex-wrap: wrap;
+    max-width: 985px;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(103, 103, 252);
+    padding: 30px 52px 30px 50px;
   }
 
   &__title {
-
+    max-width: 270px;
+    text-transform: capitalize;
+    color: white;
   }
 
   &__input-container {
-
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    height: 58px;
+    display: flex;
   }
 
   &__input {
+    width: 100%;
+    height: 100%;
+    padding: 0px 130px 0 20px;
+    border: 1px solid white;
+    background-color: white;
+    outline: none;
+  }
+
+  button {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: calc(50% - 58/2);
+  }
+}
+
+//   == SECTION : CONTACTS ==
+.contacts {
+
+  &__header {
+    margin-top: 60px;
+  }
+
+  &__content {
+    width: 100%;
+    min-height: 395px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 151px;
+
+  }
+}
+
+.contact {
+  width: 328px;
+  height: 333px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 59px ;
+  background-color: white;
+  
+  &__img {
+  }
+  
+  &__email {
+    color: inherit;
+    
+    p {
+      text-align: center;
+      color: inherit;
+    }
+  }
+  
+  &__title {
+    color: inherit;
+    
+  }
+  
+  &--primary {
+    height: 393px;
+    padding: 70px 59px ;
+    color: white;
+    background-color: rgb(99, 99, 240);
+  }
+}
+
+//   == SECTION : CONSULTATION ==
+.consultation {
+  max-width: 1046px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 42px 0;
+
+  &__caption {
+    max-width: 500px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  &__button {
+    margin-top: 2px;
+    margin-right: 144px;
+    padding: 15px 40px;
 
   }
 }

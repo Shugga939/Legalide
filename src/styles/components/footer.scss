@@ -1,0 +1,47 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__links {
+    width: 100%;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  &__social {
+
+  }
+}
+
+
+.links {
+  flex: 0 1 1040px;
+  display: flex;
+  justify-content: space-between;
+
+  &__column {
+
+  }
+
+  &__title {
+
+  }
+
+  &__list {
+
+  }
+
+  &__link {
+    
+  }
+}
+
+.social {
+  flex: 0 1 1040px;
+  background-color: red;
+  min-height: 74px;
+}
