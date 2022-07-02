@@ -1,11 +1,7 @@
-window.addEventListener('resize', adptive)
-adptive()
-
 function adptive () {
   let width = window.innerWidth
   let height = window.innerHeight
   adaptive_header(width, height)
-  
 }
 
 function adaptive_header (w,h) {
@@ -26,4 +22,26 @@ function adaptive_header (w,h) {
   }
 }
 
+
+// custom event
+(function() {
+  var throttle = function(type, name, obj) {
+      obj = obj || window;
+      var running = false;
+      var func = function() {
+          if (running) { return; }
+          running = true;
+           requestAnimationFrame(function() {
+              obj.dispatchEvent(new CustomEvent(name));
+              running = false;
+          });
+      };
+      obj.addEventListener(type, func);
+  };
+
+  throttle("resize", "optimizedResize");
+})();
+
+window.addEventListener("optimizedResize", adptive)
+adptive()
 
