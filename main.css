@@ -486,7 +486,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: url(/src/assets/images/header/header-background.png);
+  background: url(./src/assets/images/header/header-background.png);
   background-position: center;
   background-size: cover; }
   .header-body__navigation-wrapper {
@@ -571,18 +571,18 @@ p {
       .navigation__buttons button:hover {
         cursor: pointer; }
     .navigation__buttons .search-button {
-      background: url(/src/assets/images/header/search-button.svg);
+      background: url(./src/assets/images/header/search-button.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
       margin-right: 18px; }
     .navigation__buttons .basket-button {
-      background: url(/src/assets/images/header/basket-button.svg);
+      background: url(./src/assets/images/header/basket-button.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
   .navigation__menu button {
-    background: url(/src/assets/images/header/Menu-button.svg);
+    background: url(./src/assets/images/header/Menu-button.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 25px;
@@ -768,7 +768,7 @@ p {
     display: flex;
     justify-content: center;
     width: 100%;
-    background: url(/src/assets/images/main/information/blue_bg.png), #FAFAFA;
+    background: url(./src/assets/images/main/information/blue_bg.png), #FAFAFA;
     background-repeat: no-repeat;
     background-position: bottom; }
     @media (max-width: 710px) {
@@ -950,7 +950,7 @@ p {
       object-fit: cover; }
   .who__video-trigger {
     position: absolute;
-    background-image: url(/src/assets/images/main/who/video-cover.png);
+    background-image: url(./src/assets/images/main/who/video-cover.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -963,7 +963,7 @@ p {
       height: 98px;
       top: calc(50% - 49px);
       left: calc(50% - 49px);
-      content: url(/src/assets/images/main/who/play.svg); }
+      content: url(./src/assets/images/main/who/play.svg); }
   .who__advantage-container {
     flex: 0 1 330px;
     margin-top: 30px;
